@@ -1,7 +1,7 @@
 inifile
 =======
 
-一个轻量级的INI文件解析库
+一个轻量级的INI文件解析库,使用gtest和valgrind做过测试
 
 使用很简单
 生成一个ini文件`test.ini`
