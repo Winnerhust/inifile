@@ -214,8 +214,14 @@ TEST(IniFile,reopen)
 	EXPECT_EQ(ini.getValue("DEFINE","tt")==NULL,true);
 
 }
+
+#ifdef GTEST_MAIN
+#undef GTEST_MAIN
+
 int main(int argc, char* argv[])
 {
     testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();
 }
+
+#endif
